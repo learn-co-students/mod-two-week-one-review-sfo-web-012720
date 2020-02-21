@@ -26,3 +26,10 @@
   <%=  f.submit %>
 
   <% end %>
+
+  <br>
+  <br>
+
+  <%= form_tag sea_path(@sea.id), method: "delete" do %>
+    <%= submit_tag "Delete #{@sea.name}" %>
+  <% end %>
